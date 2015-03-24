@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="CSS/style.css" type="text/css">
-  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lobster|Montserrat|Oswald' type='text/css'>
-  </head>
- <body>
- 	<form class="navigation">
-    <ul>
-      <li><a class="mobileNav" href="#">Home</a></li>
-      <li><a class="mobileNav" href="#">Games</a></li>
-      <li><a class="mobileNav" href="#">Teams</a></li>
-      <li><a class="mobileNav" href="#">About</a></li>
-      <li><a class="mobileNav" href="#">Contact</a></li>
-    </ul>
-		<input class="login" type=text value placeholder="Username"><br>
-		<input class="login" type=password value placeholder="Password"><br>
-		<input id="signIn" type="submit" value="Sign In" >
-		<hr>
-    <input id="reg" type="submit" value="Register"> 
-  </form>
-
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-
-<div class="site-wrap">
-    <div id="main">
-  		<header>
-  			<nav>
-  				<ul>
+<head>
+	<title>Home Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+  	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster|Montserrat|Oswald|Open+Sans' type='text/css'>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+	<body>
+		<input  type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+		<label for="drawer-toggle" id="drawer-toggle-label"></label>
+		<header>
+			<img id="logo" src="Images/footie-logo.png" />
+			<nav id="main-nav">
+				<ul>
 	  				<li><a class="active" href="#">Home</a></li>
 	  				<li><a href="#">Games</a></li>
 	  				<li><a href="#">Teams</a></li>
 	  				<li><a href="#">About</a></li>
+	  				<li><a href="#">Contact</a></li>			
+				</ul>
+			</nav>
+		</header>
+		<section id="drawer">
+			<nav id="mobile-nav">
+				<ul>
+	  				<li><a href="#">Home</a></li>
+	  				<li><a href="#">Games</a></li>
+	  				<li><a href="#">Teams</a></li>
+	  				<li><a href="#">About</a></li>
 	  				<li><a href="#">Contact</a></li>
-  				</ul>
-  			</nav>
-  				<!-- END NAV-->
-  		</header>
-  			<!-- END HEADER-->
-  			<div id="center">
-  				<img id="mainImg" src="Images/main.png" alt="soccer" /> 
-  			</div>
-  		</div>
-    <!-- END TITLE -->
-</div>
-
- </body>
- </html>
+				</ul>
+			</nav>
+			<form>
+				<input class="login" type=text value placeholder="Username"><br>
+				<input class="login" type=password value placeholder="Password"><br>
+				<input id="signIn" type="submit" value="Sign In" >
+				<hr>
+		    	<input id="reg" type="submit" value="Register">
+			</form>
+		</section>
+		<div id="page-content">
+			<img id="mainImg" src="Images/main.png" /> 
+		</div>
+	</body>
+</html>
