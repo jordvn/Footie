@@ -1,0 +1,29 @@
+#about {
+    margin: 55px auto 0 auto; 
+    display: block;
+    width: 1024px;
+}
+
+h1 {
+    text-align: center;
+    background: #F7CA18;
+    padding: 10px;
+    font-family: Arial;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+p {
+    background: #fff;
+    padding: 10px;
+    line-height: 2;
+}
+
+/* Responsive MQ */
+
+@media all and (max-width:768px) {
+    
+    #about {
+        width: 100%;
+    }
+}

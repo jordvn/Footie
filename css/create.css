@@ -1,0 +1,73 @@
+#wrapper{
+    width: 960px;
+    margin: 55px auto 0 auto; 
+}
+
+
+/* This one if for the map*/
+#map-canvas{
+    width: 100%;
+    height: 400px;
+}
+
+/* this one is for the textbox in the map*/
+#pac-input{
+    width: 300px;
+    height: 24px;
+}
+
+h1 {
+    background: #F7CA18;
+    text-align: center;
+    padding: 10px;
+    font-family: ARIAL;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+}
+
+#time, #date{
+    height: 24px;
+    width: 50%;
+    font-size: 130%;
+}
+
+#details{
+    height: 200px;
+    width: 50%;
+    font-size: 130%;
+}
+
+#form {
+    background: #fff;
+    padding: 10px;
+}
+
+#send {
+    background: #F7CA18;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+#send:hover {
+    cursor: pointer;
+}
+
+
+
+@media all and (max-width:768px) {
+    
+    #wrapper {
+        width: 100%;
+    }
+}
